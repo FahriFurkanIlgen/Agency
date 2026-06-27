@@ -1,9 +1,27 @@
+import { SmoothScroll } from "@/components/SmoothScroll";
+import { Nav } from "@/components/Nav";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Feature } from "@/components/Feature";
+import { Program } from "@/components/Program";
+import { OpenCalls } from "@/components/OpenCalls";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-muted-foreground">
-        Clone target not yet built. Run <code className="font-mono text-foreground">/clone-website</code> to start.
-      </p>
-    </main>
+    <>
+      <SmoothScroll />
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Feature />
+        <Program />
+        <OpenCalls />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }

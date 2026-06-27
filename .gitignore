@@ -9,6 +9,12 @@ out/
 build/
 dist/
 
+# Local content store (edited via /admin; seeded from DEFAULT_CONTENT)
+/data/content.json
+
+# Large source video masters (not used by the site; .mp4 versions are served)
+/public/videos/*.mov
+
 # Environment
 .env
 .env.local
